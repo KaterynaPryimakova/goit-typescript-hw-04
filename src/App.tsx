@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import RequestComponent from "./homework/2";
 import { Observer } from "./homework/1";
+import { FormComponent } from "./homework/3";
+import { ComponentApp } from "./homework/4";
 
 function App() {
     return (
@@ -21,8 +23,10 @@ function App() {
                     Learn React
                 </a>
             </header>
-            <Observer onContentEndVisible={() => console.log("End")}>
+            <Observer onContentEndVisible={() => alert("Happy End")}>
                 <RequestComponent />
+                <FormComponent />
+                <ComponentApp />
             </Observer>
         </div>
     );
